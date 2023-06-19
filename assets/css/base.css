@@ -21,8 +21,7 @@ html {
 .grid {
     width: 1200px;
     max-width: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: 0 auto;
 }
 
 .grid__full-width {
@@ -32,4 +31,14 @@ html {
 .grid__grow {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
