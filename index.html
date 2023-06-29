@@ -108,8 +108,27 @@
                                 Trợ giúp
                             </a>
                         </li>
-                        <li class="header__navbar-items header__navbar-items--bold header__navbar-items--separate">Đăng ký</li>
-                        <li class="header__navbar-items header__navbar-items--bold">Đăng nhập</li>
+                        <!-- <li class="header__navbar-items header__navbar-items--bold header__navbar-items--separate">Đăng ký</li>
+                        <li class="header__navbar-items header__navbar-items--bold">Đăng nhập</li> -->
+                        <li class="header__navbar-items header__navbar-user">
+                            <img src="https://down-vn.img.susercontent.com/file/e7555f9713f9406c1e560cdc18472aa2_tn" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Công Bình</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Địa chỉ của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <!-- Header-with-search -->
@@ -125,13 +144,29 @@
                     </div>
 
                     <div class="header__search">
-                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Trần Công Bình</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Trần Ngọc Thái</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Bùi Thị Thu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="header__search-select">
                             <span class="header__search-select-label">Trong shop</span>
                             <i class="header__search-select-icon fa-solid fa-angle-down"></i>
                         
                             <ul class="header__search-option">
-                                <li class="header__search-option-item">
+                                <li class="header__search-option-item header__search-option-item--active">
                                     <span>Trong shop</span>
                                     <i class="fa-solid fa-check"></i>
                                 </li>
@@ -147,8 +182,86 @@
                         </button>
                     </div>
 
+                    <!-- Cart layout -->
                     <div class="header__cart">
-                        <i class="fa-solid fa-cart-shopping header__cart-icon"></i>
+                        <div class="header__cart-wrap ">
+                            <i class="fa-solid fa-cart-shopping header__cart-icon"></i>
+                            <span class="header__cart-notice">3</span>
+
+                            <!-- No cart: header__cart-list--no-cart-->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                <span class="header__cart-list-no-cart-msg">
+                                    Chưa có sản phẩm
+                                </span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item"> 
+                                    <!-- Cart item -->
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn.abphotos.link/photos/resized/320x/2022/09/25/1664101151_rpX9qZ6JLUjSQtxe_1664109692-phplfqcfr.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Set kem chống nắng CB</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">990.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-desc">
+                                                    Phân loại: Bạc
+                                                </div>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn.abphotos.link/photos/resized/320x/2023/04/17/1681707160_BteWhXM2lrZGA4HV_1681710480-phptxchfd.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Phấn nước CB</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">1.350.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-desc">
+                                                    Phân loại: Bạc
+                                                </div>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="https://cdn.abphotos.link/photos/resized/320x/1651145334-phpfwwvwx.png" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Set kem chống nắng nâng tông CB</h5>
+                                                <div class="header__cart-item-price-wrap">
+                                                    <span class="header__cart-item-price">990.000</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <div class="header__cart-item-desc">
+                                                    Phân loại: Bạc
+                                                </div>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <button class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+
+                        
                     </div>
                 </div>
             </div>
